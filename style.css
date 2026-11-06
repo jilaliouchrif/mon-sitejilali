@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101027;
+    color: white;
+}
+
+/* MENU */
+
+header {
+    background: #191936;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #00e5ff;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00e5ff;
+}
+
+/* ACCUEIL */
+
+.hero {
+    min-height: 450px;
+    background:
+        linear-gradient(rgba(10, 10, 40, 0.5), rgba(10, 10, 40, 0.9)),
+        url("https://images.unsplash.com/photo-1542751371-adc38448a05e")
+        center/cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #00d9ff;
+    color: #101027;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* MODES */
+
+#modes {
+    padding: 60px 6%;
+    text-align: center;
+}
+
+#modes h2,
+#boutique h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+    color: #00e5ff;
+}
+
+.modes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.mode {
+    background: #202044;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.mode:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 229, 255, 0.25);
+}
+
+.mode img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.mode h3 {
+    padding: 15px 15px 5px;
+    color: #00e5ff;
+}
+
+.mode p {
+    padding: 10px 15px 20px;
+    line-height: 1.5;
+    color: #dddded;
+}
+
+/* BOUTIQUE */
+
+#boutique {
+    padding: 60px 6%;
+    text-align: center;
+    background: #191936;
+}
+
+#boutique p {
+    margin-bottom: 25px;
+}
+
+#shop {
+    background: #292950;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* PIED DE PAGE */
+
+footer {
+    background: #090919;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+}
+
+/* TELEPHONE */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+}
